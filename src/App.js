@@ -1,20 +1,18 @@
-import React, { useState} from "react";
+import React from "react";
 import "./App.css";
-import AddToDo from "./components/AddToDo/AddToDo";
-import Header from "./components/Header/Header";
-import ToDoList from "./components/ToDoList/ToDoList";
+import { Provider } from "react-redux";
+import store from "./store";
+import Cart from "./components/Cart";
 
-function App() {
-  const [todo, setTodo] = useState(JSON.parse(localStorage.getItem("todo"))||[]);
-  
-  // 
+function App(props) {
+
   return (
-    <div>
-      <Header />
-      <AddToDo todo={todo} setTodo={setTodo} />
-      <ToDoList todo={todo} setTodo={setTodo} />
-    </div>
-  );
+    <Provider store = {store}>
+      <div>
+        <Cart/>
+      </div>
+    </Provider>
+  )
 }
 
 export default App;
