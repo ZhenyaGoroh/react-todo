@@ -1,0 +1,65 @@
+.todo__container {
+    display: flex;
+    border-radius: 1rem;
+    min-height: 2.4rem;
+    transition: background 0.3s;
+    align-items: center;
+    padding: 0 1rem;
+}
+.todo__container:hover {
+    background: rgb(232, 232, 232);
+}
+
+.todo__inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: .3rem;
+}
+
+.todo__text {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+
+.fill__star {
+    fill: orange;
+    cursor: pointer;
+}
+.dot{
+    cursor: pointer;
+}
+
+.btn{
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.delete-btn{
+    font-size: 1.3rem;
+}
+
+.todo-edit-field{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.todo-edit__input{
+    outline: none;
+    border: none;
+    background: inherit;
+    width: 100%;
+    font-size: 1.25rem;
+    margin-left: 2.4rem;
+}
+
+.done{
+    font-size: 1.4rem;
+    margin-right: 0.3rem;
+}
+
+
