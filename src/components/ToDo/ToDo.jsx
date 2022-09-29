@@ -30,14 +30,14 @@ function Todo(props) {
         <div className="todo__inner">
           <div className="todo__text">
             {props.importance === true ? (
-              <div>
+              <div className="fill__star-div">
                 <AiFillStar
                   className="fill__star"
                   onClick={() => props.toggleImportance(props.id)}
                 />
               </div>
             ) : (
-              <div>
+              <div className="dot-div">
                 <BsDot
                   className="dot"
                   onClick={() => props.toggleImportance(props.id)}
